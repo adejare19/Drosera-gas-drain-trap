@@ -1,16 +1,16 @@
 # RPC endpoints
-ethereum_rpc = "https://rpc.hoodi.ethpandaops.io"
+ethereum_rpc = "https://eth-goerli.g.alchemy.com/v2/abKdlfrAH5SCZZBD8j-lOj98Y_9d9jCL"
 drosera_rpc  = "https://relayer.testnet.drosera.io"
 
 [traps]
 
 [traps.GasDrainTrap]
-path = "out/GasDrainTrap.sol/GasDrainTrap.json"       
-response_contract = "0x436534C110E87b76a2A9FF08db0B5676Ce0a8F6c"          
+path = "out/GasDrainTrap.sol/GasDrainTrap.json"
+response_contract = "0x436534C110E87b76a2A9FF08db0B5676Ce0a8F6c"
 response_function = "protectAndSweep(address,bytes[],address,uint256)"
 cooldown_period_blocks = 2
 min_number_of_operators = 1
 max_number_of_operators = 2
 block_sample_size = 2
 private_trap = false
-whitelist = []   
+whitelist = []
